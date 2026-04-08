@@ -14,7 +14,6 @@
   --font-body: 'Trebuchet MS', sans-serif;
 }
 
-/* ===== RESET ===== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: var(--font-body);
@@ -23,7 +22,6 @@ body {
   background: var(--white);
 }
 
-/* ===== NAVBAR (req #6) ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,7 +61,6 @@ body {
   border-bottom: 3px solid var(--secondary);
 }
 
-/* ===== HERO ===== */
 .hero {
   background: linear-gradient(135deg, var(--bg-dark) 0%, var(--primary) 60%, #1e5a9e 100%);
   background-image: linear-gradient(135deg, rgba(13,27,42,0.92), rgba(26,60,110,0.85)),
@@ -93,7 +90,6 @@ body {
   animation: fadeUp 0.8s 0.2s ease both;
 }
 
-/* PAGE HERO (req #4 - background styling) */
 .page-hero {
   padding: 80px 40px;
   text-align: center;
@@ -111,7 +107,6 @@ body {
 .gallery-hero { background: linear-gradient(135deg, #6c3483, #1a3c6e); }
 .contact-hero { background: linear-gradient(135deg, #922b21, #1a3c6e); }
 
-/* ===== BUTTONS ===== */
 .btn {
   display: inline-block;
   background: var(--secondary);
@@ -140,7 +135,6 @@ body {
 }
 .btn-outline:hover { background: var(--primary); color: white; }
 
-/* ===== SECTIONS ===== */
 .section { padding: 70px 40px; max-width: 1200px; margin: 0 auto; }
 .bg-light { background: var(--bg-light); max-width: 100%; padding: 70px 80px; }
 .section-title {
@@ -161,7 +155,6 @@ body {
   border-radius: 2px;
 }
 
-/* ===== TWO-COLUMN LAYOUT (req #1) ===== */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -176,7 +169,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* ===== FORMATTED PARAGRAPHS (req #8) ===== */
 .formatted-para {
   font-size: 1.05rem;
   line-height: 1.8;
@@ -187,7 +179,6 @@ body {
   padding-left: 16px;
 }
 
-/* ===== NESTED LIST (req #5) ===== */
 .nested-list {
   list-style: none;
   padding: 0;
@@ -211,7 +202,6 @@ body {
   padding: 3px 0;
 }
 
-/* ===== FULL-LENGTH TABLES (req #3) ===== */
 .full-table {
   width: 100%;
   border-collapse: collapse;
@@ -232,7 +222,6 @@ body {
 .full-table tbody tr:nth-child(even) { background: var(--bg-light); }
 .full-table tbody tr:hover { background: #dce8f5; transition: background 0.2s; }
 
-/* ===== MEDIA / IMAGE & VIDEO CONTAINERS (req #2) ===== */
 .media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -267,7 +256,6 @@ body {
   font-weight: 600;
 }
 
-/* ===== COURSE CARDS ===== */
 .course-card {
   background: var(--white);
   border: 1px solid #e0e8f0;
@@ -292,7 +280,6 @@ body {
   margin-top: 8px;
 }
 
-/* ===== CARD ===== */
 .card {
   background: var(--white);
   border-radius: var(--radius);
@@ -301,7 +288,6 @@ body {
   border-top: 4px solid var(--primary);
 }
 
-/* ===== TIMELINE LIST ===== */
 .timeline-list {
   list-style: none;
   padding: 0;
@@ -316,7 +302,6 @@ body {
 }
 .timeline-list li strong { color: var(--primary); }
 
-/* ===== CONTACT FORM (req #9 - added feature) ===== */
 .contact-form {
   background: var(--white);
   padding: 30px;
@@ -353,7 +338,6 @@ body {
   box-shadow: 0 0 0 3px rgba(26,60,110,0.1);
 }
 
-/* ===== CONTACT INFO CARDS ===== */
 .contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
 .contact-info-card {
   background: var(--bg-light);
@@ -364,7 +348,6 @@ body {
 .contact-info-card h3 { color: var(--primary); font-size: 1rem; margin-bottom: 6px; }
 .contact-info-card p { color: var(--text-light); font-size: 0.9rem; }
 
-/* ===== SOCIAL LINKS (req #9) ===== */
 .social-links h3 { color: var(--primary); margin-bottom: 12px; }
 .social-icons { display: flex; flex-wrap: wrap; gap: 10px; }
 .social-btn {
@@ -381,7 +364,6 @@ body {
 .instagram{ background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: white; }
 .youtube  { background: #ff0000; color: white; }
 
-/* ===== FOOTER (req #11) ===== */
 .footer {
   background: var(--bg-dark);
   color: #ccc;
@@ -412,13 +394,11 @@ body {
   font-size: 0.85rem;
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .two-col, .footer-cols, .contact-cards { grid-template-columns: 1fr; }
   .navbar { flex-direction: column; padding: 12px 20px; }
