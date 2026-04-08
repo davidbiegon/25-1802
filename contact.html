@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Greenfield University</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">🎓 Greenfield University</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero contact-hero">
+    <h1>Contact Us</h1>
+    <p>We're here to help you</p>
+  </header>
+
+  <section class="section two-col">
+    <div class="col">
+      <h2>Get in Touch</h2>
+      <p class="formatted-para">Whether you're a prospective student, parent, researcher, or partner institution, our team is always available to answer your questions. Reach out through any of the channels below.</p>
+
+      <!-- ADDED FEATURE: Contact Form (req #9) -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option>Admissions Inquiry</option>
+            <option>Fee Structure</option>
+            <option>Academic Programs</option>
+            <option>Student Services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn" onclick="alert('Message sent! We will reply within 24 hours.')">Send Message</button>
+      </div>
+    </div>
+
+    <div class="col">
+      <h2>Our Offices</h2>
+      <p class="formatted-para">Our main campus is located in the heart of Nairobi. We also have satellite campuses in Mombasa, Kisumu, and Nakuru to serve students across Kenya.</p>
+
+      <div class="contact-cards">
+        <div class="contact-info-card">
+          <h3>📍 Main Campus</h3>
+          <p>123 University Avenue, Westlands, Nairobi, Kenya</p>
+        </div>
+        <div class="contact-info-card">
+          <h3>📞 Phone</h3>
+          <p>+254 700 000 000<br/>+254 20 000 0000</p>
+        </div>
+        <div class="contact-info-card">
+          <h3>✉️ Email</h3>
+          <p>info@greenfield.ac.ke<br/>admissions@greenfield.ac.ke</p>
+        </div>
+        <div class="contact-info-card">
+          <h3>🕐 Office Hours</h3>
+          <p>Mon – Fri: 8:00 AM – 5:00 PM<br/>Sat: 9:00 AM – 1:00 PM</p>
+        </div>
+      </div>
+
+      <!-- ADDED FEATURE: Social Media Links (req #9) -->
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-btn facebook">📘 Facebook</a>
+          <a href="#" class="social-btn twitter">🐦 Twitter</a>
+          <a href="#" class="social-btn instagram">📷 Instagram</a>
+          <a href="#" class="social-btn youtube">▶️ YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <h3>Greenfield University</h3>
+        <p>Empowering minds since 1985.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>📍 123 University Ave, Nairobi</p>
+        <p>📞 +254 700 000 000</p>
+        <p>✉️ info@greenfield.ac.ke</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Greenfield University. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
