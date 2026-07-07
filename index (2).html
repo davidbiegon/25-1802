@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for character set, responsiveness and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment webpage demonstrating HTML5 semantics, external CSS, forms and optimized image loading">
+    <title>HTML5 Semantics Assignment</title>
+
+    <!-- External CSS file linked here (Requirement 2) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. HEADER: semantic element for introductory content -->
+    <header id="main-header" class="site-header">
+        <h1>My Semantic Web Page</h1>
+        <p>An assignment demonstrating HTML5 semantics &amp; best practices</p>
+
+        <!-- 2. NAV: semantic element for navigation links -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact-form" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN: semantic wrapper for the page's primary content -->
+    <main class="site-main">
+
+        <!-- 4. SECTION: a thematic grouping of content -->
+        <section id="about" class="content-section">
+            <h2>About This Page</h2>
+
+            <!-- 5. ARTICLE: independent, self-contained content -->
+            <article class="info-article">
+                <h3>Purpose</h3>
+                <p>
+                    This page was built to practice HTML5 semantic elements,
+                    external CSS styling with classes and IDs, form inputs,
+                    and optimized image loading.
+                </p>
+                <!-- 6. TIME: semantic element for machine-readable dates -->
+                <p>Last updated: <time datetime="2026-07-07">July 7, 2026</time></p>
+            </article>
+
+            <!-- 7. ASIDE: content tangentially related to the main content -->
+            <aside class="info-aside">
+                <h4>Quick Note</h4>
+                <p>All images below are optimized and lazy-loaded for faster page performance.</p>
+            </aside>
+        </section>
+
+        <!-- Image gallery section -->
+        <section id="gallery" class="content-section">
+            <h2>Image Gallery</h2>
+
+            <div class="gallery-grid">
+
+                <!-- 8. FIGURE + FIGCAPTION: semantic grouping for images with captions -->
+                <figure class="gallery-item">
+                    <img
+                        src="images/nature.jpg"
+                        alt="A scenic green nature landscape"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                        class="gallery-img">
+                    <figcaption>Nature</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="images/city.jpg"
+                        alt="A blue-toned city skyline illustration"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                        class="gallery-img">
+                    <figcaption>City</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="images/tech.jpg"
+                        alt="A technology themed graphic"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                        class="gallery-img">
+                    <figcaption>Technology</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Contact / Registration form section -->
+        <section id="contact-form" class="content-section">
+            <h2>Contact Form</h2>
+
+            <form id="registration-form" class="user-form" action="#" method="post" enctype="multipart/form-data">
+
+                <!-- First name -->
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first_name"
+                        class="form-input"
+                        placeholder="Enter your first name"
+                        required>
+                </div>
+
+                <!-- Second / Last name -->
+                <div class="form-group">
+                    <label for="last-name">Second Name:</label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last_name"
+                        class="form-input"
+                        placeholder="Enter your second name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="you@example.com"
+                        required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="form-input"
+                        placeholder="+254 700 000000"
+                        pattern="[0-9+ ]{7,15}">
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        class="form-input">
+                </div>
+
+                <!-- Search bar -->
+                <div class="form-group">
+                    <label for="site-search">Search:</label>
+                    <input
+                        type="search"
+                        id="site-search"
+                        name="site_search"
+                        class="form-input"
+                        placeholder="Search this site...">
+                </div>
+
+                <!-- File attachment -->
+                <div class="form-group">
+                    <label for="attachment">Attach a File:</label>
+                    <input
+                        type="file"
+                        id="attachment"
+                        name="attachment"
+                        class="form-file">
+                </div>
+
+                <!-- Radio buttons -->
+                <fieldset class="form-group">
+                    <legend>Gender:</legend>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="male" class="form-radio">
+                        Male
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="female" class="form-radio">
+                        Female
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="other" class="form-radio">
+                        Other
+                    </label>
+                </fieldset>
+
+                <!-- Checkbox -->
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="subscribe" name="subscribe" class="form-checkbox">
+                        Subscribe to our newsletter
+                    </label>
+                </div>
+
+                <!-- Submit button -->
+                <div class="form-group">
+                    <button type="submit" id="submit-btn" class="btn-submit">Submit</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 9. FOOTER: semantic element for footer/closing content -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Semantics Assignment. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript linked with script src, placed at the end for performance (Requirement 6) -->
+    <script src="script.js"></script>
+</body>
+</html>
