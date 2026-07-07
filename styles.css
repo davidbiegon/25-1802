@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Global reset & base styles
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +11,6 @@ body {
     color: #2b2b2b;
     background-color: #f7f7f9;
 }
-
-/* ==========================================================================
-   Header (styled using ID because it appears only once on the page)
-   ========================================================================== */
 #main-header {
     background-color: #1f2937;
     color: #ffffff;
@@ -28,8 +22,6 @@ body {
     margin-top: 0.5rem;
     color: #d1d5db;
 }
-
-/* Navigation (class-based since nav styles could be reused elsewhere) */
 .main-nav ul {
     list-style: none;
     display: flex;
@@ -50,10 +42,6 @@ body {
 .nav-link:hover {
     background-color: #374151;
 }
-
-/* ==========================================================================
-   Main content layout
-   ========================================================================== */
 .site-main {
     max-width: 960px;
     margin: 0 auto;
@@ -86,10 +74,6 @@ body {
     border-radius: 4px;
     font-size: 0.95rem;
 }
-
-/* ==========================================================================
-   Image gallery
-   ========================================================================== */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -115,10 +99,6 @@ body {
     font-weight: 600;
     color: #374151;
 }
-
-/* ==========================================================================
-   Form styling
-   ========================================================================== */
 .user-form {
     background-color: #ffffff;
     padding: 1.5rem;
@@ -149,8 +129,6 @@ body {
     outline: none;
     border-color: #4f46e5;
 }
-
-/* Radio and checkbox groups */
 .radio-label,
 .checkbox-label {
     display: inline-flex;
@@ -165,8 +143,6 @@ body {
     width: 16px;
     height: 16px;
 }
-
-/* Submit button (ID used since there is only one submit button) */
 #submit-btn {
     background-color: #4f46e5;
     color: #ffffff;
@@ -182,10 +158,6 @@ body {
 #submit-btn:hover {
     background-color: #4338ca;
 }
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
 .site-footer {
     background-color: #1f2937;
     color: #d1d5db;
